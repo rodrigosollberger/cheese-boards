@@ -1,5 +1,5 @@
 const {sequelize} = require('./db');
-const {User, Board, Cheese} = require('./index')
+const {User, Board, Cheese} = require('./models')
 
 describe('User, Board and Cheese Models', () => {
     /**

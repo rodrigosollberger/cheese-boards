@@ -4,7 +4,7 @@ User Model
     email string
 */
 
-const sequelize = require("./db");  
+const sequelize = require("../db");  
 /*
     the sequelized connection from the sequelized file. 
     This is so we have access to the table that's gonna be created

@@ -1,11 +1,10 @@
 /*
-Board Model
-    type string
+Cheese Model
+    title string
     description string
-    rating number
 */
 
-const sequelize = require("./db");  
+const sequelize = require("../db");  
 /*
     the sequelized connection from the sequelized file. 
     This is so we have access to the table that's gonna be created
@@ -20,10 +19,9 @@ const { DataTypes } = require("sequelize");
 */
 
 //defining the model:
-const Board = sequelize.define("Board", {
-    type: DataTypes.STRING,
+const Cheese = sequelize.define("Cheese", {
+    title: DataTypes.STRING,
     description: DataTypes.STRING,
-    rating: DataTypes.NUMBER,
 });
 /*
     sequelize is the connection to the database (as established in line 27 of db.js).
@@ -33,4 +31,4 @@ const Board = sequelize.define("Board", {
     which will provide the attributes, the structure of the model/table
 */
 
-module.exports = { Board };
+module.exports = { Cheese };
